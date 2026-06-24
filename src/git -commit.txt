@@ -5,4 +5,4 @@ Committing changes:
 3. git commit: explains the changes made in a commit.
 4. git status: displays the current state of the repository, including modified, staged, and untracked files.
 5. git log displays the commit history of a repository.
-6. git log --oneline displays a shortened version of the commit history.
+6. git log --oneline displays a shortened version of the commit history
