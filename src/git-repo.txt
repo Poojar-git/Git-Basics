@@ -1,0 +1,4 @@
+Repository is a folder where git tracks for changes and it sotres history of project code
+Types of repo:
+1. Local repository
+2. Global repository
