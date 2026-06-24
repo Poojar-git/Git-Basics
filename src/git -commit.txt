@@ -1,0 +1,8 @@
+Committing changes:
+1. git add: is used to move changes from working directory to staged area
+-it tells us which files should be included in next commit.
+2. git commit: is used to permanently save the staged changes in local repository
+3. git commit: explains the changes made in a commit.
+4. git status: displays the current state of the repository, including modified, staged, and untracked files.
+5. git log displays the commit history of a repository.
+6. git log --oneline displays a shortened version of the commit history.
