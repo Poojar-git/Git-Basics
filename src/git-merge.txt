@@ -1,0 +1,4 @@
+Merging
+1. Switch to Main Branch: git checkout main
+2. Merge Feature Branch: git merge Feature-branch
+3. Delete Branch After Merge: git branch -d feature-login
