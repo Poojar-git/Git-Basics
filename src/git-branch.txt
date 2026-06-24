@@ -1,8 +1,10 @@
 Branch
 1. A branch is an independent line of development in a Git repository.
 2. Helps to : Develop new features, Fix bugs, Test changes, Keep the main branch stable
+
 Branch Command:
 1.View Current Branch: git branch
 2. Create a New Branch: git branch branch_name
 3. Switch to a Branch: git checkout branch_name or git switch branch_name
 4. Create and Switch in One Command: git checkout -b branch_name or git switch -c branch_name
+Next go with merge
