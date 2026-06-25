@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+If you want to cancel merge only in the case of merge conflict: git merge --abort to stop or undo merge.
+=======
+git merge-abort works only with merge conflict situation not when we have a proper successful merge without a conflict.
+>>>>>>> merge-conflict

@@ -1,0 +1,1 @@
+git merge-abort works only with merge conflict situation not when we have a proper successful merge without a conflict.
