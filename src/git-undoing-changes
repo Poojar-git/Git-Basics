@@ -1,0 +1,17 @@
+8. Undoing Changes:
+8.1 Reverting commits. 
+>	Git revert creates a new commit that 	reverses the change made by earlier commit.
+>	Importance:
+-  Commit history is preserved. 
+-  Safe for shared repositories. 
+-  Preferred in team projects.
+>	Command: git revert <commit-hash> : safely undoes changes
+8.2 Resetting changes.
+>	git reset moves the branch pointer to a previous commit by erasing the present commit.
+>	Types of reset
+1.	Soft reset: git reset --soft <commit-hash>
+•	Commit removed, staging area remains same.
+2.	Mixed reset(default): git reset <commit-hash>
+•	Commit removed, unstages the changes
+3.	Hard reset: git reset --hard <commit-hash>
+•	Commit, removed, unstage changes, changes made in file removed and restored to its original state.
