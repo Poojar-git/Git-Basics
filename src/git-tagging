@@ -1,0 +1,17 @@
+1 Creating and managing tags for releases or specific points in history.
+•	Commands for tag:
+>	Creating a lightweight tag: git tag <tagname>
+>	Create an annoted tag: git tag -a <tagname> -m “message”
+>	Tagging a specific commit: git tag <tagname> <commit-hash>
+>	List tags: git tag
+>	Shows tag details: git show <tagname>
+•	A lightweight tag is just a name for a commit, simple and no extra information.
+•	Annoted tag: Stores authors, date and message
+•	By default tags will be present inside local repo you have to explicitly push tag to get appear on remote repositories.
+•	To push a single tag: git push origin <tagname>
+•	To push several tags: git push --tags
+•	Delete a tag locally: git tag -d <tagname>
+•	Delete a tag from remote repository: git push origin --delete tag <tagname>
+•	If you want to update a move a tag to a different commit and update the remote use --force
+	->git tag -f v1.0 <new-commithash>
+	->git push --force origin v1.0 
