@@ -1,1 +1,28 @@
+A Remote Repository is a Git repository hosted on a remote server (such as GitHub) that allows developers to share and collaborate on code.
+
+4.1 Cloning repositories from remote sources.
+•	Cloning means creating a copy of remote repository on to your local computer.
+•	Command: git clone <repository-url>
+•	Example: git clone https://github.com/Poojar-git/Git-Basics.git
+•	What happens internally: 
+	>Creates a folder name git basics
+  >Downloads all project files 
+  >Downloads commit history
+  >Connects local repo to remote repositories
+•	Verify remote connection: 
+git remote -v : origin  https://github.com/Poojar-git/Git-Basics.git (fetch)
+origin  https://github.com/Poojar-git/Git-Basics.git (push)
+•	 Fetch: download changes from github, push: upload changes to github    
+
+   4.2 Pushing Changes to Remote Repositories
+•	Pushing is the process of uploading your local commit to a remote repository
+•	When we do changes in local repository the changes will not appear in remote repository until we push it to github
+•	Command to push: git push origin main
+•	First time puh: git push -u origin main(-u:upstream links the local branch with the remote branch)
+•	After first push we can simply use: git push
+•	git push origin main pushes changes to the remote main branch. 
+•	git push -u origin main pushes changes and sets the upstream (tracking) relationship between the local and remote branches, allowing future pushes and pulls to be done without specifying the branch name.
+•	git push origin main -> push only
+•	git push -u origin main -> push + remember destination
+    
 
