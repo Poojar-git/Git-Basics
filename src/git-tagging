@@ -13,5 +13,5 @@
 •	Delete a tag locally: git tag -d <tagname>
 •	Delete a tag from remote repository: git push origin --delete tag <tagname>
 •	If you want to update a move a tag to a different commit and update the remote use --force
-	->git tag -f v1.0 <new-commithash>
-	->git push --force origin v1.0 
+	->git tag -f v1.0 <new-commithash>
+	->git push --force origin v1.0 
