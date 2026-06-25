@@ -1,1 +1,1 @@
-git merge abort
+If you want to cancel merge only in the case of merge conflict: git merge --abort to stop or undo merge.
