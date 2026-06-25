@@ -1,1 +1,32 @@
+1.	Collaborative Work
+5.1 Working with others on the same project
+•	Collaborative work in Git means multiple developers working on the same project simultaneously while managing their changes through Git and GitHub.
+•	Collaborative Work flow:
+>	Step 1 Clone Repository
+>	Step 2 Create Feature Branch
+>	Step 3 Develop Feature
+>	Step 4 Push branch
+>	Step 5 Raise pull request
+>	Step 6 Code Review
+>	Step 7 Merge into main
+•	Commands:
+>	Clone repo: git clone <repo-url>
+>	Create branch: git branch feature-login
+>	Check current branch: git branch
+>	Push branch: git push -u origin feature-login
+>	Pull latest changes: git pull origin main
+                5.2 Handling merge conflicts.
+•	A Merge Conflict occurs when Git cannot automatically merge changes because the same part of a file has been modified differently in two branches.
+•	Git gets confused which changes to save, so then developer must manually choose the correct code.
+•	Why do merge conflict occur: When you try to merge two branches that have edited same part of the code.
+•	How to see and resolve conflicts:
+>	Merge a branch: git merge feature-branch : if there are conflicts git will tell you
+>	See which file have conflicts: git status tells which files need your attention.
+>	See the difference: git diff to see what changed and helps you decide how to resolve conflict.
+>	Edit the conflict markers: Edit the file to want you want and remove all the conflict markers(<<<<<<<-head current pointer, =======-separator, >>>>>>-points to another branch)
+>	After fixing file mark it as resolved: git add <filename>
+>	Complete the merge: Finish merge with commit if it does not do automatically: git commit
+>	If you want to cancel merge: git merge –abort to stop or undo merge
+>	To use a visual merge tool: git mergetool
+>	To pick one side’s changes: Keep our changes: git checkout --ours filename.txt, Keep their changes: git checkout --theirs filename.txt
 
