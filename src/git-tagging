@@ -2,7 +2,7 @@
 •	Commands for tag:
 >	Creating a lightweight tag: git tag <tagname> 
 >	Create an annoted tag: git tag -a <tagname> -m “message”-start
->	Tagging a specific commit: git tag <tagname> <commit-hash>
+>	Tagging a specific commit: git tag <tagname> <commit-hash>-start
 >	List tags: git tag
 >	Shows tag details: git show <tagname>
 •	A lightweight tag is just a name for a commit, simple and no extra information.
