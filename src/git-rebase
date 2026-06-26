@@ -1,0 +1,39 @@
+It gives full control over commit history.
+Command: git rebase -i HEAD~n: where n is no. of commits to edit
+•	Common Interactive Rebase Commands:
+•	Pick: keep the commit as it is
+•	Reword: change the commit message
+•	Edit: modify the commit
+•	Squash: Combine commit with previous commit
+•	Fixup: combine commit and discard its message
+•	Drop: remove the commit
+1.	Pick: pick abc123 Add Login
+default option(commit remains unchanged) 
+2. Reword: reword abc123 Add Login
+     Git asks to edit only commit message
+3. Edit: edit abc123 Add Login
+Git pauses at the commit. You can modify files, add changes, amend commit then continue: 
+git rebase --continue
+4.Squash: is ised to combine multiple consecutive commits into a single commit
+So you have to keep first one as pick rest commits to combine this as squash 
+Example : -pick abc123 Add login
+	   -squash abc124 add button in login
+	   -squash abc125 added bg-color to login page
+•	All three gets combined and after saving it asks to rewrite combined commit message you can write it as : “Added login page with  bg-color and buttons”
+•	Never squash or rebase commits that have already been pushed to a remote repository
+•	If you make a mistake or get stuck in a complex merge conflict during a rebase, you can always safely cancel the entire operation and return to your original state by running git rebase --abort
+5.	Fixup: Similar to squash
+Squash - combine code+combine titles: opens editor to rewrite titles of commits
+Fixup - combine code+ delete extra titles: git automatically deletes the titles of extra commits and keeps only the first commit’s title you don’t need to type anything
+Command		 Merge codes?	Asks to edit message
+Squash			yes			yes(opens editor)
+Fixup 				yes			 no(deletes extra titles)
+6.	Drop: drop abc123  Debug code
+Remove unwanted commits(commit disappears)
+•	Commands:
+•	Start interactive rebase: git rebase -i HEAD~3
+•	Continue: git rebase --continue
+•	Abort: git rebase --abort
+•	Skip commit: git rebase --skip
+Avoid using rebase after pushing as it confuses others.
+
