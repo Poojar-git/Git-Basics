@@ -1,1 +1,18 @@
+A Git Submodule is a Git repository inside another Git repository.
+A submodule allows one Git project to include and use another Git project while keeping them as separate repositories.
+Benefits:
+•	No duplicate code 
+•	Easy updates 
+•	Independent version control 
+•	Better code organization 
+Add  a submodule
+•	Syntax: git submodule add <repo-url>
+•	Git creates a file name .gitmodules: it stores information about all submodules.
+•	Clone a repo with submodules: git clone --recurse-submodules <repo-url>
+•	Initialize existing subodules: git submodule init , then git submodule update or you can use git submodule update --init
+•	Update a submodule: To fetch the latest chages from the submodule: 
+git submodule update –remote
+•	Check submodules: git submodule 
+•	Remove a submodule: git submodule deinit submodule-name
+
 
