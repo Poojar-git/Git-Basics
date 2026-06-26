@@ -1,0 +1,11 @@
+Git Hooks are scripts that run automatically before or after Git events. 
+Hooks are stored in .git/hooks/. 
+Client-side hooks run on the developer's machine. 
+Server-side hooks run on the Git server. 
+pre-commit is used for checks before committing. 
+commit-msg validates commit messages. 
+post-commit runs after a successful commit. 
+pre-push runs before pushing changes. 
+Hooks automate workflows and improve code quality. 
+Git Hooks are local and are not shared with the repository by default.
+
