@@ -1,0 +1,19 @@
+What is Git Stash?
+Definition
+Git Stash is a Git feature that temporarily saves your uncommitted changes so that you can work on something else without committing those changes.
+Important commands:
+•	Save changes: git stash stores all tracked modified files.
+•	View all stashes: git stash list
+•	Apply a stash: git stash apply – restores latest stash, stash remains in the stash list.
+•	Apply a specific stash: git stash apply stash@{1}
+•	Pop a stash: git stash pop
+•	Drop a stash: git stash drop stash@{1}
+•	Delete all stashes: git stash clear
+•	Stash with a message: git stash push -m “Login feature”
+•	Stash untracked files: git stash -u or git stash --include-untracked
+•	Difference between stash apply and pop: 
+Stash apply 				stash pop
+Restores changes			Restore changes
+Stash remains 				Removes the stash
+Can be reused				cannot be reused
+
