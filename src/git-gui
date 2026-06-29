@@ -1,1 +1,3 @@
+Git GUI: provides a grafical interface where we can perform multiple git operations like commit, push, pull, merge everything without typing comands
+Neither GUI or CLI is universally better, git gui is good for beginners and provides visual experience, while git cli provides access to advanced git operations.
 
