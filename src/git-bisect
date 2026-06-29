@@ -1,1 +1,8 @@
-
+Git bisect: Git bisect is a debugging tool that helps to find a commit that introduced bug using binary search through the commit history
+•	Commands:
+•	Start: git bisect start
+•	Mark current commit as bad: git bisect bad
+•	Mark a known good commit: git bisect good <commit-id>
+•	If bug exists: git bisect bad
+•	If bug does not exist: git bisect good
+•	Finish: git bisect reset: returns to original branch
