@@ -2,3 +2,4 @@ git reflog records every changes of HEAD pointer, and helps to recover the commi
 Supoose u did: git reset --hard HEAD~2
 Then run: git reflog: you will get commit-id of deleted one also
 Now run: git reset --hard commit-id: this recovers the lost commit
+This is how git-reflog restores lost commit.
